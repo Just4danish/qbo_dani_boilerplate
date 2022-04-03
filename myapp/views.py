@@ -6,6 +6,7 @@ from rest_framework.response import Response
 
 from intuitlib.client import AuthClient
 from intuitlib.enums import Scopes
+from intuitlib.exceptions import AuthClientError
 from django.conf import settings
 from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseServerError
 from django.shortcuts import render, redirect
